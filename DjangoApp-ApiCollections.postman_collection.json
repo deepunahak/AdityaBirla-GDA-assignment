@@ -1,0 +1,446 @@
+{
+	"info": {
+		"_postman_id": "d7ae01f6-08e2-4bc5-80e1-9c60501eafe0",
+		"name": "DjangoApp-ApiCollections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ifsc_search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/ifsc_search?ifsc_code=ABHY0065008",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"ifsc_search"
+					],
+					"query": [
+						{
+							"key": "ifsc_code",
+							"value": "ABHY0065008"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ifsc_search",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/ifsc_search?ifsc_code=ABHY0065008",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"ifsc_search"
+							],
+							"query": [
+								{
+									"key": "ifsc_code",
+									"value": "ABHY0065008"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 30 Jan 2022 12:05:51 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "290"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"bank\": \"ABHYUDAYA COOPERATIVE BANK LIMITED\",\n    \"ifsc\": \"ABHY0065008\",\n    \"micr_code\": 400065008,\n    \"branch\": \"KANJUR\",\n    \"address\": \"BHANDARI CO-OP. HSG. SOCIETY, KANJUR VILLAGE, KANJUR (EAST), MUMBAI-400078\",\n    \"std_code\": 22,\n    \"city\": \"GREATER MUMBAI\",\n    \"district\": \"MUMBAI\",\n    \"state\": \"MAHARASHTRA\"\n}"
+				}
+			]
+		},
+		{
+			"name": "statistics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/statistics?sortorder=DESC&fetchcount=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"statistics"
+					],
+					"query": [
+						{
+							"key": "sortorder",
+							"value": "DESC"
+						},
+						{
+							"key": "fetchcount",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "statistics",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/statistics?sortorder=DESC&fetchcount=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"statistics"
+							],
+							"query": [
+								{
+									"key": "sortorder",
+									"value": "DESC"
+								},
+								{
+									"key": "fetchcount",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 30 Jan 2022 12:05:44 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "141"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    [\n        \"ABHY0065008\",\n        \"2022-01-30 17:16:14.921332\"\n    ],\n    [\n        \"ABHY0065010\",\n        \"2022-01-30 17:15:58.573789\"\n    ],\n    [\n        \"ABHY0065001\",\n        \"2022-01-30 17:15:37.889632\"\n    ]\n]"
+				}
+			]
+		},
+		{
+			"name": "bank_leader_board",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/bank_leader_board?sortorder=ASC&fetchcount=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"bank_leader_board"
+					],
+					"query": [
+						{
+							"key": "sortorder",
+							"value": "ASC"
+						},
+						{
+							"key": "fetchcount",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "bank_leader_board",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/bank_leader_board?sortorder=ASC&fetchcount=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"bank_leader_board"
+							],
+							"query": [
+								{
+									"key": "sortorder",
+									"value": "ASC"
+								},
+								{
+									"key": "fetchcount",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 30 Jan 2022 12:05:33 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "83"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"CANARA BANK\": 10817,\n    \"PUNJAB NATIONAL BANK\": 12237,\n    \"STATE BANK OF INDIA\": 28500\n}"
+				}
+			]
+		},
+		{
+			"name": "api_hit_count",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api_hit_count",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api_hit_count"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "api_hit_count",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api_hit_count",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api_hit_count"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 30 Jan 2022 12:05:23 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "62"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"/ifsc_search\": 5,\n    \"/statistics\": 1,\n    \"/bank_leader_board\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "ifsc_hit_count",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/ifsc_hit_count",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"ifsc_hit_count"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ifsc_hit_count",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/ifsc_hit_count",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"ifsc_hit_count"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 30 Jan 2022 11:56:29 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "54"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"ABHY0065001\": 1,\n    \"ABHY0065010\": 1,\n    \"ABHY0065008\": 3\n}"
+				}
+			]
+		}
+	]
+}
